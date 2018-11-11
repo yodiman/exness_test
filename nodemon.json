@@ -1,0 +1,5 @@
+{
+  "ext": "js json",
+  "watch": ["*.js", "*.json"],
+  "runOnChangeOnly": true
+}

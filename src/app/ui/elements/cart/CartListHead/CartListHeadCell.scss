@@ -1,0 +1,35 @@
+@import "variables";
+
+
+.cell {
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary, 50%);
+  }
+
+
+  &:global {
+    &.asc, &.desc {
+      &:after {
+        margin-left: 0.5em;
+      }
+    }
+
+    &.asc {
+      &:after {
+        content: '⇓';
+      }
+    }
+
+    &.desc {
+      &:after {
+        content: '⇑';
+      }
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+}

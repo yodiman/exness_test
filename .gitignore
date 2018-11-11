@@ -1,0 +1,16 @@
+.idea/
+node_modules/
+src/**/*.js
+*.map
+*.iml
+*.swp
+*.js
+webpack-assets.json
+webpack-stats.json
+webpack/*.js
+npm-debug.log
+reports/
+doc/
+static/assets/
+static/server/
+.hg

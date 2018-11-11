@@ -1,0 +1,62 @@
+@import "variables";
+
+
+html, body {
+  background-color: $page-bg !important;
+  font-family: Lato, sans-serif, arial;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  color: $primary;
+  word-break: break-word;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style-position: inside;
+}
+
+
+a {
+  color: $primary;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover, &:focus{
+    text-decoration: none;
+    color: $primary;
+    outline: 0;
+  }
+
+  &:hover, &:focus:hover {
+    color: darken($link-color, 10%);
+  }
+
+  &:focus:active {
+    color: darken($link-color, 20%);
+  }
+}

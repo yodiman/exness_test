@@ -1,0 +1,25 @@
+@import "variables";
+
+
+.item {
+  padding: $container-indent;
+  max-width: 48vw;
+  flex-basis: 25%;
+
+  @media screen and (max-width: $width-md) {
+    flex-basis: 33.333333%;
+  }
+
+  @media screen and (max-width: $width-xs) {
+    flex-basis: 50%;
+  }
+}
+
+.content {
+  border: 1px solid $tone-light;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

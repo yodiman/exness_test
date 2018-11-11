@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports":  true,
+    "outDir": ".",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": ".",
+    "lib": [
+      "dom",
+      "esnext"
+    ]
+  },
+  "typeRoots" : [
+    "src/typings",
+    "node_modules/@types"
+  ],
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}

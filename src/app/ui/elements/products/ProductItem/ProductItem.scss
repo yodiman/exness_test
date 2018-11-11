@@ -1,0 +1,32 @@
+@import "variables";
+
+
+.content {
+  &:hover {
+    .thumb {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.name {
+  text-align: center;
+  padding: 5px 10px;
+  color: $light;
+}
+
+.price {
+  text-align: right;
+  padding: 5px 10px 0;
+  color: $light;
+  font-weight: bold;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}

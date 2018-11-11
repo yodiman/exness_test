@@ -1,0 +1,81 @@
+@import "../variables";
+
+@mixin btn($bg, $color: $light) {
+  @extend .btn;
+  background: $bg;
+  color: $color;
+
+  &:active:focus {
+    outline: none;
+  }
+  &:focus, &:hover {
+    background: $bg;
+    color: $color;
+  }
+  &:focus:hover, &:hover:not(:disabled) {
+    background: darken($bg, 10%);
+    color: darken($color, 5%);
+  }
+  &:hover:active {
+    background: darken($bg, 15%);
+    color: darken($color, 10%);
+  }
+}
+
+.btn, .btn:active, .btn:focus, .btn:hover, .btn:active:hover {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 darken($input-bg, 20%);
+  transition: all 200ms ease;
+  background-color: $input-bg;
+  outline: 0;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+
+  &:focus, &:active {
+    outline: 0;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:disabled {
+    box-shadow: 0 1px 1px 0 $tone-middle;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.btn-default {
+  @include btn($tone-lighten, $primary);
+}
+
+.btn-primary {
+  @include btn($primary);
+}
+
+.btn-success {
+  @include btn($color-success);
+}
+
+.btn-info {
+  @include btn($color-info);
+}
+
+.btn-warning {
+  @include btn($color-warning);
+}
+
+.btn-danger {
+  @include btn($color-danger);
+}

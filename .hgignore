@@ -1,0 +1,15 @@
+syntax: glob
+.idea/
+node_modules/
+*.iml
+src/**/*.js
+*.map
+webpack-assets.json
+webpack-stats.json
+webpack/*.js
+npm-debug.log
+*.swp
+reports/
+doc/
+static/assets/
+static/server/
