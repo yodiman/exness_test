@@ -4,7 +4,6 @@ src/**/*.js
 *.map
 *.iml
 *.swp
-*.js
 webpack-assets.json
 webpack-stats.json
 webpack/*.js
