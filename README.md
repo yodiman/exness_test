@@ -42,6 +42,23 @@ yarn run tslint
 ```
 
 
-# Configuration
+# Structure
 
-See `/src/app/config` and `/webpack` directories and `package.json` file.
+- `/env` - folder for environment configs
+- `/scripts` - sh scripts for building
+- `/src` - source code
+- `/static` - static server assets and js, css files
+- `/webpack` - webpack config files
+
+## SRC folder
+- `/client` - client entry point
+- `/server` - server entry point
+- `/helpers` - some client and server helpers
+
+- `/app/config` - config files
+- `/app/interfaces` - common interfaces
+- `/app/routes` - app routes
+- `/app/theme` - common app styles and scss variables
+- `/app/modules` - app modules: DTO, services, interfaces, redux actions and reducers
+- `/app/redux` - redux core: main reducer, store, middlewares, some redux helpers
+- `/app/ui` - react components: `containers` - routes entry points, `modules` - app modules components, `shared` - common app components
