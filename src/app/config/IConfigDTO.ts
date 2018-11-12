@@ -13,6 +13,7 @@ export interface IConfigDTO {
     title: string;
   };
   env: {
+    domainUrl: string;
     host: string;
     hostUrl: string;
     isProduction: boolean;

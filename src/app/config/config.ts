@@ -6,6 +6,7 @@ const protocolPrefix = `http${ssl ? 's' : ''}://`;
 const port = +(process.env.PORT);
 const host = process.env.HOST || configDefaults.host;
 const hostUrl = `${protocolPrefix}${host}:${port}`;
+const domainUrl = process.env.DOMAIN_URL || '';
 
 const config: IConfigDTO = {
   app: {
@@ -25,6 +26,7 @@ const config: IConfigDTO = {
     },
   },
   env: {
+    domainUrl,
     host,
     hostUrl,
     isProduction: process.env.NODE_ENV === 'production',

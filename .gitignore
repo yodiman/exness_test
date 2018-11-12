@@ -9,7 +9,7 @@ webpack-stats.json
 webpack/*.js
 npm-debug.log
 reports/
-doc/
+docs/
 static/assets/
 static/server/
 .hg
